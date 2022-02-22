@@ -8,7 +8,7 @@ function first(text){
   
 for(let i = 0; i < textList.length; i++){
   
-    var word = textList[i]
+    const word = textList[i]
     textList[i] = word[0].toUpperCase() + word.slice(1);
     }
   
@@ -18,6 +18,4 @@ for(let i = 0; i < textList.length; i++){
   
 
 
-
-
-console.log(first('Ola Mundo'))
+console.log(first('Ola fdhd Mundo'))
