@@ -1,27 +1,23 @@
 function first(text){
-    
- const letrasMinusculas = text.toLowerCase()
+
  
   const re = /\s+/
-  const nameList = letrasMinusculas.split(re)
-
-  let result = ''
+  const textList = text.toLowerCase().split(re)
+ 
   
-for(let i = 0; i < nameList.length; i++){
-    nameList[i] = nameList[i].split('')
-    nameList[i][0] = nameList[i][0].toUpperCase()
-     
-    result+=nameList[i].join('')
-    
-    if(nameList.length-1 > i){
-          result+=' '
+  
+for(let i = 0; i < textList.length; i++){
+  
+    var word = textList[i]
+    textList[i] = w[0].toUpperCase() + word.slice(1);
     }
+  
+  return textList.join(" ")
     
 }
   
-  return result
-
-}
 
 
-console.log(first('Teste oLa Palavra'))
+
+
+console.log(first('Ola Mundo'))
