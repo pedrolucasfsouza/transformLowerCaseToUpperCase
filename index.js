@@ -9,7 +9,7 @@ function first(text){
 for(let i = 0; i < textList.length; i++){
   
     var word = textList[i]
-    textList[i] = w[0].toUpperCase() + word.slice(1);
+    textList[i] = word[0].toUpperCase() + word.slice(1);
     }
   
   return textList.join(" ")
